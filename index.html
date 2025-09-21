@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты Kaiyrgul</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-gradient-to-r from-pink-100 to-purple-100 min-h-screen flex items-center justify-center">
   <div class="bg-white p-8 rounded-2xl shadow-xl w-96 text-center">
@@ -21,28 +22,36 @@
 
       <!-- Instagram -->
       <a href="https://www.instagram.com/massage.kaiyrgul" target="_blank"
-         class="bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 px-4 rounded-xl shadow hover:opacity-90 transition">
-        📷 Instagram
+         class="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 px-4 rounded-xl shadow hover:opacity-90 transition">
+        <i data-lucide="instagram" class="w-5 h-5"></i>
+        Instagram
       </a>
 
       <!-- WhatsApp -->
       <a href="https://wa.me/77024207523" target="_blank"
-         class="bg-green-500 text-white py-3 px-4 rounded-xl shadow hover:bg-green-600 transition">
-        💬 WhatsApp
+         class="flex items-center justify-center gap-2 bg-green-500 text-white py-3 px-4 rounded-xl shadow hover:bg-green-600 transition">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        WhatsApp
       </a>
 
       <!-- Телефон -->
       <a href="tel:+77024207523"
-         class="bg-blue-500 text-white py-3 px-4 rounded-xl shadow hover:bg-blue-600 transition">
-        📞 Позвонить
+         class="flex items-center justify-center gap-2 bg-blue-500 text-white py-3 px-4 rounded-xl shadow hover:bg-blue-600 transition">
+        <i data-lucide="phone" class="w-5 h-5"></i>
+        Позвонить
       </a>
 
       <!-- Адрес -->
       <a href="https://2gis.kz/semey/geo/70000001089540677" target="_blank"
-         class="bg-gray-700 text-white py-3 px-4 rounded-xl shadow hover:bg-gray-800 transition">
-        📍 Адрес (2ГИС)
+         class="flex items-center justify-center gap-2 bg-gray-700 text-white py-3 px-4 rounded-xl shadow hover:bg-gray-800 transition">
+        <i data-lucide="map-pin" class="w-5 h-5"></i>
+        Адрес (2ГИС)
       </a>
     </div>
   </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
